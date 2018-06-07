@@ -1,0 +1,108 @@
+*{
+	margin:0px;
+}
+.container{
+	width:1024px;
+	margin:0 auto; 
+}
+.header{
+	width:1024px;
+	/*vh使占全屏*/
+	height:100vh;
+	background-color: #192314;
+	overflow: hidden;
+	position: relative;
+}
+.header-pic{
+	width:662px;
+	height: 509px;
+	background: url(green-beosound-shape-desktop.jpg);
+	background-size: 100%;
+	float: right;
+	margin-left: 5px;
+}
+.header-text{
+	width: 512px;
+	height: 205px;
+	position: absolute;
+	top: 170px; 
+	left: 90px;
+	color: #fff;
+}
+.word1{
+	height: 24px;
+	margin-bottom: 10px; 
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	
+}
+
+
+.title{
+	height: 39px;
+	margin-top:15px;
+	margin-bottom: 24px; 
+	font-family: SimHei,"黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
+	font-size:30px;
+	letter-spacing: 3.75px;
+	font-weight: normal;
+	text-align: left;
+}
+.word2{
+	height: 21px;
+	margin-bottom: 19.5px;
+	font-size: 13px;
+	font-weight: 300;
+}
+.button{
+	width: 161px;
+	height: 16px;
+	background-color:rgba(255,255,255,0.1);; 
+	padding:10px 40px;
+	margin:8px 0; 
+}
+a{
+	display: block;
+	color:#fff;
+	text-decoration: none;
+	font-size: 10px;
+}
+.banner{
+	height: 305px;
+	padding-bottom: 100px;
+	background: url(img-bg-1350.jpg);
+	background-size: 100% auto;
+	/*对图片修改位置*/
+	background-position: 0 -158px;
+
+}
+.product{
+	width:705px;
+	height: 353px;
+	margin:0 auto;
+	padding: 0 59px;
+	margin-top: -48px;
+	/*海拔提升，不让别的东西遮住它*/
+	position: relative;
+	z-index: 100;
+	
+}
+.product-item{
+	float: left;
+	width: 235px;
+	height: 353px;
+	position: relative;
+
+}
+.product-item img{
+	width: 100%;
+
+}
+.product-item h4{
+	color:#fff;
+	position: absolute;
+	top:15px;
+	left: 20px;
+	font-size: 18px;
+}

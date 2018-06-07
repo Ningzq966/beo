@@ -1,13 +1,16 @@
 *{
 	margin:0px;
+	/*加了box-sizing，padding不会撑大盒子*/
+	box-sizing:border-box;
 }
 .container{
 	width:1024px;
 	margin:0 auto; 
+	position: relative;
 }
 .header{
 	width:1024px;
-	/*vh使占全屏*/
+	/*100vh使占全屏*/
 	height:100vh;
 	background-color: #192314;
 	overflow: hidden;
@@ -56,8 +59,8 @@
 	font-weight: 300;
 }
 .button{
-	width: 161px;
-	height: 16px;
+	width: 241px;
+	height: 36px;
 	background-color:rgba(255,255,255,0.1);; 
 	padding:10px 40px;
 	margin:8px 0; 
@@ -69,7 +72,7 @@ a{
 	font-size: 10px;
 }
 .banner{
-	height: 305px;
+	height: 405px;
 	padding-bottom: 100px;
 	background: url(img-bg-1350.jpg);
 	background-size: 100% auto;
@@ -78,7 +81,7 @@ a{
 
 }
 .product{
-	width:705px;
+	width:823px;
 	height: 353px;
 	margin:0 auto;
 	padding: 0 59px;
@@ -105,4 +108,160 @@ a{
 	top:15px;
 	left: 20px;
 	font-size: 18px;
+}
+.top{
+	height: 57px;
+	width: 100%;
+	padding:0 22px;
+	/*使元素行排，*/
+	display: flex;
+	/*剩余部分均匀分布*/
+	justify-content:space-between;
+	/*位置自由*/
+	position: absolute;
+	width: 100%;
+	top:0;
+	left: 0;
+	z-index: 2000;
+	/*使字排在盒子中间*/
+    text-align: center;
+    color: #fff;
+}
+.center{
+	height: 57px;
+	width: 191px;
+	/*设置行高使字排在正中间*/
+	line-height: 57px;
+	
+
+}
+.right,.left{
+	height: 57px;
+	width:150px;
+	line-height: 57px;
+	font-size: 10px;	
+}
+.left{
+	background: url(product.png);
+	background-repeat: no-repeat;
+	background-position:left center; 
+}
+
+.right{
+	background: url(menu.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.next-text{
+	height: 280px;
+	padding:90px;
+	text-align: center;
+	
+
+}
+.next-text h6{
+	letter-spacing: 0.96px;
+	font-size: 9.6px;
+	margin-top: 9px;
+	margin-bottom: 11px;
+	font-weight: normal;
+}
+.next-text h2{
+	letter-spacing: 5px;
+	font-size: 30px;	
+	font-family: 黑体;
+	font-weight: normal;
+}
+.picture{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap:wrap;
+	}
+.picture-item{
+	height: 512px;
+	width: 512px;
+	position: relative;
+}
+.picture-item:nth-child(1){
+    background: url(picture-item.jpg);
+    background-size: 100% auto;
+}
+.picture-item:nth-child(2){
+	background: url(beovision-eclipse-mobile.jpg);
+ 	background-size: 100% auto;
+}
+.picture-item:nth-child(3){
+	background: url(beolab-50-mobile.jpg);
+	background-size: 100% auto;
+}
+.picture-item:nth-child(4){
+	background: url(beoplay-p6-categories-mobile-2.jpg);
+	background-size: 100% auto;
+}
+.picture-item:nth-child(5){
+	background: url(beosound-core-mobile.jpg);
+	background-size: 100% auto;
+}
+.picture-item:nth-child(6){
+	background: url(beoplay-h9i-mobile.jpg);
+	background-size: 100% auto;
+}
+.picture-item h2{
+	color: #fff;
+	position: absolute;
+	top: 31px;
+	left: 40px;
+	font-size: 11px;
+
+}
+.tail{
+	height: 364px;
+	
+	
+
+}
+.tail-box{
+	height: 364px;
+	width: 705px;
+	display: flex;
+	flex-wrap:wrap;
+	margin: 0 auto;
+	
+}
+.one{
+	height: 100%;
+	width: 176px;
+	background: url(design-as-a-group-effort-01.jpg);
+	
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.two{
+	height: 100%;
+	width: 176px;
+	background: url(the-krane.jpg);
+	
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.three{
+	height: 100%;
+	width: 352px;
+	background: url(harmonies-story.jpg);
+	background-repeat: no-repeat;
+	
+	background-size: 100% auto;
+}
+h5{
+	margin-top:170px;
+	text-align: center;
+	font-weight: normal;
+	color: #666666;
+}
+p{
+	color: #b9b9b9;
+	font-size:13px;
+	font-weight: 300;
+	font-family: "Gotham SSm A","Gotham SSm B";
 }

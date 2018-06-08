@@ -1,267 +1,378 @@
-*{
-	margin:0px;
-	/*加了box-sizing，padding不会撑大盒子*/
-	box-sizing:border-box;
-}
-.container{
-	width:1024px;
-	margin:0 auto; 
-	position: relative;
-}
-.header{
-	width:1024px;
-	/*100vh使占全屏*/
-	height:100vh;
-	background-color: #192314;
-	overflow: hidden;
-	position: relative;
-}
-.header-pic{
-	width:662px;
-	height: 509px;
-	background: url(green-beosound-shape-desktop.jpg);
-	background-size: 100%;
-	float: right;
-	margin-left: 5px;
-}
-.header-text{
-	width: 512px;
-	height: 205px;
-	position: absolute;
-	top: 170px; 
-	left: 90px;
-	color: #fff;
-}
-.word1{
-	height: 24px;
-	margin-bottom: 10px; 
-	font-size: 12px;
-	font-weight: 400;
-	letter-spacing: 2px;
-	
+* {
+    margin: 0;
+    /*加了box-sizing，padding不会撑大盒子*/
+    box-sizing: border-box;
 }
 
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
 
-.title{
-	height: 39px;
-	margin-top:15px;
-	margin-bottom: 24px; 
-	font-family: SimHei,"黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
-	font-size:30px;
-	letter-spacing: 3.75px;
-	font-weight: normal;
-	text-align: left;
+.header {
+    width: 1024px;
+    /*100vh使占全屏*/
+    height: 100vh;
+    background-color: #192314;
+    overflow: hidden;
+    position: relative;
 }
-.word2{
-	height: 21px;
-	margin-bottom: 19.5px;
-	font-size: 13px;
-	font-weight: 300;
-}
-.button{
-	width: 241px;
-	height: 36px;
-	background-color:rgba(255,255,255,0.1);; 
-	padding:10px 40px;
-	margin:8px 0; 
-}
-a{
-	display: block;
-	color:#fff;
-	text-decoration: none;
-	font-size: 10px;
-}
-.banner{
-	height: 405px;
-	padding-bottom: 100px;
-	background: url(img-bg-1350.jpg);
-	background-size: 100% auto;
-	/*对图片修改位置*/
-	background-position: 0 -158px;
 
+.header-pic {
+    width: 662px;
+    height: 509px;
+    background: url(green-beosound-shape-desktop.jpg);
+    background-size: 100%;
+    float: right;
+    margin-left: 5px;
 }
-.product{
-	width:823px;
-	height: 353px;
-	margin:0 auto;
-	padding: 0 59px;
-	margin-top: -48px;
-	/*海拔提升，不让别的东西遮住它*/
-	position: relative;
-	z-index: 100;
-	
+
+.header-text {
+    width: 512px;
+    height: 205px;
+    position: absolute;
+    top: 170px;
+    left: 90px;
+    color: #fff;
 }
-.product-item{
-	float: left;
-	width: 235px;
-	height: 353px;
-	position: relative;
+
+.word1 {
+    height: 24px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
 
 }
-.product-item img{
-	width: 100%;
+
+.title {
+    height: 39px;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    font-family: SimHei, "黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.word2 {
+    height: 21px;
+    margin-bottom: 19px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.button {
+    width: 241px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    padding: 10px 40px;
+    margin: 8px 0;
+}
+
+a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.banner {
+    height: 405px;
+    padding-bottom: 100px;
+    background: url(img-bg-1350.jpg) 0 -158px;
+    background-size: 100% auto;
+    /*对图片修改位置background position*/
+}
+
+.product {
+    width: 823px;
+    height: 353px;
+    margin: -48px auto 0 auto;
+    padding: 0 59px;
+    /*海拔提升，不让别的东西遮住它*/
+    position: relative;
+    z-index: 100;
+}
+
+.product-item {
+    float: left;
+    width: 235px;
+    height: 353px;
+    position: relative;
+}
+
+.product-item img {
+    width: 100%;
 
 }
-.product-item h4{
-	color:#fff;
-	position: absolute;
-	top:15px;
-	left: 20px;
-	font-size: 18px;
+
+.product-item h4 {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 18px;
 }
-.top{
-	height: 57px;
-	width: 100%;
-	padding:0 22px;
-	/*使元素行排，*/
-	display: flex;
-	/*剩余部分均匀分布*/
-	justify-content:space-between;
-	/*位置自由*/
-	position: absolute;
-	width: 100%;
-	top:0;
-	left: 0;
-	z-index: 2000;
-	/*使字排在盒子中间*/
+
+.top {
+    height: 57px;
+    width: 100%;
+    padding: 0 22px;
+    /*使元素行排，*/
+    display: flex;
+    /*剩余部分均匀分布*/
+    justify-content: space-between;
+    /*位置自由*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    /*使字排在盒子中间*/
     text-align: center;
     color: #fff;
 }
-.center{
-	height: 57px;
-	width: 191px;
-	/*设置行高使字排在正中间*/
-	line-height: 57px;
-	
 
-}
-.right,.left{
-	height: 57px;
-	width:150px;
-	line-height: 57px;
-	font-size: 10px;	
-}
-.left{
-	background: url(product.png);
-	background-repeat: no-repeat;
-	background-position:left center; 
+.center {
+    height: 57px;
+    width: 191px;
+    /*设置行高使字排在正中间*/
+    line-height: 57px;
 }
 
-.right{
-	background: url(menu.png);
-	background-repeat: no-repeat;
-	background-position: right center;
+.right, .left {
+    height: 57px;
+    width: 150px;
+    line-height: 57px;
+    font-size: 10px;
 }
 
-.next-text{
-	height: 280px;
-	padding:90px;
-	text-align: center;
-	
+.left {
+    background: url(product.png) no-repeat left center;
+}
+
+.right {
+    background: url(menu.png) no-repeat right center;
 
 }
-.next-text h6{
-	letter-spacing: 0.96px;
-	font-size: 9.6px;
-	margin-top: 9px;
-	margin-bottom: 11px;
-	font-weight: normal;
+
+.next-text {
+    height: 280px;
+    padding: 90px;
+    text-align: center;
+
 }
-.next-text h2{
-	letter-spacing: 5px;
-	font-size: 30px;	
-	font-family: 黑体;
-	font-weight: normal;
+
+.next-text h6 {
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-top: 9px;
+    margin-bottom: 11px;
+    font-weight: normal;
 }
-.picture{
-	margin: 0 auto;
-	display: flex;
-	flex-wrap:wrap;
-	}
-.picture-item{
-	height: 512px;
-	width: 512px;
-	position: relative;
+
+.next-text h2 {
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-family: SimHei, "黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
+    font-weight: normal;
 }
-.picture-item:nth-child(1){
+
+.picture {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture-item {
+    height: 512px;
+    width: 512px;
+    position: relative;
+}
+
+.picture-item:nth-child(1) {
     background: url(picture-item.jpg);
     background-size: 100% auto;
 }
-.picture-item:nth-child(2){
-	background: url(beovision-eclipse-mobile.jpg);
- 	background-size: 100% auto;
+
+.picture-item:nth-child(2) {
+    background: url(beovision-eclipse-mobile.jpg);
+    background-size: 100% auto;
 }
-.picture-item:nth-child(3){
-	background: url(beolab-50-mobile.jpg);
-	background-size: 100% auto;
+
+.picture-item:nth-child(3) {
+    background: url(beolab-50-mobile.jpg);
+    background-size: 100% auto;
 }
-.picture-item:nth-child(4){
-	background: url(beoplay-p6-categories-mobile-2.jpg);
-	background-size: 100% auto;
+
+.picture-item:nth-child(4) {
+    background: url(beoplay-p6-categories-mobile-2.jpg);
+    background-size: 100% auto;
 }
-.picture-item:nth-child(5){
-	background: url(beosound-core-mobile.jpg);
-	background-size: 100% auto;
+
+.picture-item:nth-child(5) {
+    background: url(beosound-core-mobile.jpg);
+    background-size: 100% auto;
 }
-.picture-item:nth-child(6){
-	background: url(beoplay-h9i-mobile.jpg);
-	background-size: 100% auto;
+
+.picture-item:nth-child(6) {
+    background: url(beoplay-h9i-mobile.jpg);
+    background-size: 100% auto;
 }
-.picture-item h2{
-	color: #fff;
-	position: absolute;
-	top: 31px;
-	left: 40px;
-	font-size: 11px;
+
+.picture-item h2 {
+    color: #fff;
+    position: absolute;
+    top: 31px;
+    left: 40px;
+    font-size: 11px;
+}
+
+.tail {
+    height: 489px;
+}
+
+.tail-box {
+    height: 364px;
+    width: 705px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.one {
+    height: 100%;
+    width: 176px;
+    background: url(design-as-a-group-effort-01.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
+.two {
+    height: 100%;
+    width: 176px;
+    background: url(the-krane.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
+.three {
+    height: 100%;
+    width: 352px;
+    background: url(harmonies-story.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
+.tail-box h5 {
+    margin: 200px 0 18px 0;
+    text-align: center;
+    font-weight: normal;
+    color: #666666;
+    line-height: 24px;
+}
+
+.desc {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.message {
+    height: 517px;
+    padding: 0 14px 0 14px;
+    display: flex;
+}
+
+.news-box {
+    width: 498px;
+    height: 100%;
+    border-top: solid 1px #f2f2f2;
 
 }
-.tail{
-	height: 364px;
-	
-	
+
+.news-box:nth-child(1) {
+    border-right: solid 1px #f2f2f2;
+}
+
+.news-box img {
+    margin: 80px 214px 0 214px;
+}
+
+.news-box h5 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    line-height: 23px;
+    text-align: center;
+    margin: 30px 0 12px 0;
+}
+
+.news-box p {
+    width: 289px;
+    font-size: 13px;
+    margin: 19px auto;
+    text-align: center;
+    color: #888;
 
 }
-.tail-box{
-	height: 364px;
-	width: 705px;
-	display: flex;
-	flex-wrap:wrap;
-	margin: 0 auto;
-	
+
+.news-box .button {
+    width: 200px;
+    height: 35px;
+    margin: 8px auto;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 10px;
 }
-.one{
-	height: 100%;
-	width: 176px;
-	background: url(design-as-a-group-effort-01.jpg);
-	
-	background-size: 100% auto;
-	background-repeat: no-repeat;
+
+.news-box .search {
+    margin-top: 118px;
 }
-.two{
-	height: 100%;
-	width: 176px;
-	background: url(the-krane.jpg);
-	
-	background-size: 100% auto;
-	background-repeat: no-repeat;
+
+.news-box input {
+    width: 372px;
+    height: 56px;
+    padding: 6px 12px;
+    margin: 12px 63px 40px 63px;
+    outline: none;
 }
-.three{
-	height: 100%;
-	width: 352px;
-	background: url(harmonies-story.jpg);
-	background-repeat: no-repeat;
-	
-	background-size: 100% auto;
+
+.footer {
+    height: 81px;
+    padding: 20px 14px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
 }
-h5{
-	margin-top:170px;
-	text-align: center;
-	font-weight: normal;
-	color: #666666;
+
+.foot-left {
+    height: 20px;
+    width: 350px;
+    padding-left: 30px;
+    background: url("QQ截图20180608171002.png") no-repeat left center;
 }
-p{
-	color: #b9b9b9;
-	font-size:13px;
-	font-weight: 300;
-	font-family: "Gotham SSm A","Gotham SSm B";
+
+.foot-right {
+    height: 40px;
+    width: 630px;
+    padding: 0 14px;
+}
+
+.foot-left a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: block;
+    text-decoration: none;
+    line-height: 20px;
+    color: #000;
+}
+
+.foot-right a {
+    font-size: 12px;
+    margin-left: 16px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    float: right;
 }
